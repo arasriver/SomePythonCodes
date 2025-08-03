@@ -1,6 +1,7 @@
 import random
 import matplotlib.pyplot as plt
 
+
 def assign_colors(n):
     # Create a list of numbers from 1 to n
     numbers = list(range(1, n + 1))
@@ -14,11 +15,11 @@ def assign_colors(n):
 
     # Shuffle the colors randomly
     random.shuffle(colors)
-
     # Assign colors to numbers
     colored_numbers = list(zip(numbers, colors))
 
     return colored_numbers
+
 
 def plot_colored_circles(box, title):
     # Create a plot
@@ -35,12 +36,9 @@ def plot_colored_circles(box, title):
     ax.set_ylim(0, 1)
     ax.set_aspect('equal')
     ax.axis('off')
-
-    # Set the title of the plot
     plt.title(title)
-
-    # Show the plot
     plt.show()
+
 
 def calculate_percentages(box):
     # Calculate the percentage of red and blue balls in the box
@@ -53,8 +51,9 @@ def calculate_percentages(box):
 
     return red_percentage, blue_percentage
 
+
 # Number of numbers
-n = 1000  # You can change this to any number
+n = 1000
 
 # Assign colors to numbers
 colored_numbers = assign_colors(n)
@@ -103,8 +102,6 @@ for iteration in range(num_iterations):
     # Store the percentages after each iteration
     red_percentages.append(red_percentage)
     blue_percentages.append(blue_percentage)
-
-
 
 
 # Plot the previously stored results
