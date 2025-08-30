@@ -25,7 +25,7 @@ function_num = int(input())
 if function_num == 1:
    ex = " "
    while (ex.capitalize() !="Exit"):
-    compeleted_num = int(input("Which tasks are completed, Write their numebrs: "))
+    compeleted_num = int(input("Which tasks are completed, Write their numbers: "))
     task[compeleted_num] = task[compeleted_num] + " [DONE]"
     ex = input("write exit to end the program, otherwise enter anything to continue: ")
 
@@ -33,11 +33,9 @@ if function_num == 1:
 if function_num == 2:
    ex =" "
    while (ex.capitalize() !="Exit"):
-     remove_num = int(input("Which tasks should be removed, Write their numebrs: "))
+     remove_num = int(input("Which tasks should be removed, Write their numbers: "))
      task[remove_num] = "Removed"
      ex = input("write exit to end the program, otherwise enter anything to continue: ")
-
-
 
 
 for j in range(len(task)):
